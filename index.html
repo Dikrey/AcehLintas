@@ -21,37 +21,37 @@
   <meta content="index/follow" name="googlebot">
   <meta content="blogger" name="generator">
   <link href="https://www.blogger.com/openid-server.g" rel="openid.server">
-  <link href="https://www.putramobilberau.com/" rel="openid.delegate">
-  <link href="https://www.putramobilberau.com/" rel="canonical">
+  <link href="https://aceh-lintas.vercel.app" rel="openid.delegate">
+  <link href="https://aceh-lintas.vercel.app"" rel="canonical">
   <link href="https://www.putramobilberau.com/feeds/posts/default" rel="alternate"
-    title="Putra Mobil Berau Rentcar - Atom" type="application/atom+xml">
+    title="Aceh Lintas - Rental" type="application/atom+xml">
   <link href="https://www.putramobilberau.com/feeds/posts/default?alt=rss" rel="alternate"
-    title="Putra Mobil Berau Rentcar - RSS" type="application/rss+xml">
+    title="Aceh Lintas - Rental" type="application/rss+xml">
   <link href="https://www.blogger.com/feeds/5130311815048370097/posts/default" rel="alternate"
-    title="Putra Mobil Berau Rentcar - Atom" type="application/atom+xml">
+    title="Aceh Lintas - Rental" type="application/atom+xml">
   <meta content="https://www.putramobilberau.com/sitemap.xml" rel="sitemap" type="application/xml">
   <meta
     content="Aceh Lintas Jasa Sewa Mobil Rental Mobil Harian Mingguan Bulanan untuk Pribadi, Keluarga dan Kantor di Medan, Sumatera Utara HP 082149203666"
     name="description">
   <meta content="Blogspot Landing Page" name="keywords">
-  <link href="https://www.putramobilberau.com/" hreflang="x-default" rel="alternate">
+  <link href="https://aceh-lintas.vercel.app" hreflang="x-default" rel="alternate">
   <link href="images/favicon.ico" rel="icon" type="image/x-icon">
   <!-- Open Graph -->
-  <meta content="Putra Mobil Berau Rentcar" property="og:title">
+  <meta content="Aceh Lintas" property="og:title">
   <meta content="website" property="og:type">
   <meta content="https://www.putramobilberau.com/" property="og:url">
   <meta content="images/logo-bslp.png" property="og:image">
   <meta
-    content="Jasa Sewa Mobil Berau Rental Mobil Berau Harian Mingguan Bulanan untuk Pribadi, Keluarga dan Kantor di Berau, Kalimantan Timur HP 082149203666"
+    content="Jasa Sewa Mobil Berau Rental Mobil Berau Harian Mingguan Bulanan untuk Pribadi, Keluarga dan Kantor di Medan, Sumatera Utara"
     property="og:description">
-  <meta content="Putra Mobil Berau Rentcar" property="og:site_name">
+  <meta content="Aceh Lintas" property="og:site_name">
   <meta content="id" name="geo.country">
   <meta content="id_ID" property="og:locale">
   <meta content="en_US" property="og:locale:alternate">
   <meta content="Indonesia" name="geo.placename">
   <meta content="general" name="rating">
-  <meta content="Putra Mobil Berau Rentcar" property="og:image:alt">
-  <meta content="Putra Mobil Berau Rentcar" name="twitter:site">
+  <meta content="Aceh Lintasr" property="og:image:alt">
+  <meta content="Aceh Lintas" name="twitter:site">
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
   <meta content="blogger" name="generator">
@@ -65,12 +65,12 @@
     href="https://www.blogger.com/feeds/5130311815048370097/posts/default">
   <!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
   <meta
-    content="Jasa Sewa Mobil Berau Rental Mobil Berau Harian Mingguan Bulanan untuk Pribadi, Keluarga dan Kantor di Berau, Kalimantan Timur HP 082149203666"
+    content="Jasa Sewa Mobil Rental Mobil Berau Harian Mingguan Bulanan untuk Pribadi, Keluarga dan Kantor di Berau, Sumatera Utara"
     name="description">
-  <meta content="https://www.putramobilberau.com/" property="og:url">
+  <meta content="https://aceh-lintas.vercel.app" property="og:url">
   <meta content="Aceh Lintas Rentcar" property="og:title">
   <meta
-    content="Jasa Sewa Mobil Berau Rental Mobil Berau Harian Mingguan Bulanan untuk Pribadi, Keluarga dan Kantor di Berau, Kalimantan Timur HP 082149203666"
+    content="Jasa Sewa Mobil  Rental Mobil Berau Harian Mingguan Bulanan untuk Pribadi, Keluarga dan Kantor, Sumatera Utara"
     property="og:description">
   <style id="page-skin-1" type="text/css">
     <!--
@@ -7483,6 +7483,341 @@ default="small Arial,Geneva,sans-serif"/>
     .border-putus-maroon {
       border: 2px dashed maroon
     }
+    
+.loader1 {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.truckWrapper {
+  left: 3rem;
+  width: 250px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: flex-end;
+  overflow-x: hidden;
+}
+/* truck upper body */
+.truckBody {
+  width: 130px;
+  height: fit-content;
+  margin-bottom: 6px;
+  animation: motion 1s linear infinite;
+}
+/* truck suspension animation*/
+@keyframes motion {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/* truck's tires */
+.truckTires {
+  width: 130px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px 0px 15px;
+  position: absolute;
+  bottom: 0;
+}
+.truckTires svg {
+  width: 24px;
+}
+
+.road {
+  width: 100%;
+  height: 1.5px;
+  background-color: #282828;
+  position: relative;
+  bottom: 0;
+  align-self: flex-end;
+  border-radius: 3px;
+}
+.road::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  background-color: #282828;
+  right: -50%;
+  border-radius: 3px;
+  animation: roadAnimation 1.4s linear infinite;
+  border-left: 10px solid white;
+}
+.road::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  background-color: #282828;
+  right: -65%;
+  border-radius: 3px;
+  animation: roadAnimation 1.4s linear infinite;
+  border-left: 4px solid white;
+}
+
+.lampPost {
+  position: absolute;
+  bottom: 0;
+  right: -90%;
+  height: 90px;
+  animation: roadAnimation 1.4s linear infinite;
+}
+
+@keyframes roadAnimation {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-350px);
+  }
+}
+
+
+/* From Uiverse.io by Uncannypotato69 */ 
+.wrapper2 {
+  min-height: 3rem;
+  min-width: 20rem;
+  font-size: 2rem;
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 30%,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 0)
+  );
+  font-family: monospace;
+}
+
+.letter {
+  width: 1ch;
+  position: absolute;
+  top: 50%;
+  transform: translate(0px, -50%);
+  left: 100%;
+  animation: scroll 3.5s linear infinite;
+}
+
+@keyframes scroll {
+  to {
+    left: -1ch;
+  }
+}
+.letter1 {
+  animation-delay: calc(3.5s / 24 * (24 - 1) * -1);
+}
+.letter2 {
+  animation-delay: calc(3.5s / 24 * (24 - 2) * -1);
+}
+.letter3 {
+  animation-delay: calc(3.5s / 24 * (24 - 3) * -1);
+}
+.letter4 {
+  animation-delay: calc(3.5s / 24 * (24 - 4) * -1);
+}
+.letter5 {
+  animation-delay: calc(3.5s / 24 * (24 - 5) * -1);
+}
+.letter6 {
+  animation-delay: calc(3.5s / 24 * (24 - 6) * -1);
+}
+.letter7 {
+  animation-delay: calc(3.5s / 24 * (24 - 7) * -1);
+}
+.letter8 {
+  animation-delay: calc(3.5s / 24 * (24 - 8) * -1);
+}
+.letter9 {
+  animation-delay: calc(3.5s / 24 * (24 - 9) * -1);
+}
+.letter10 {
+  animation-delay: calc(3.5s / 24 * (24 - 10) * -1);
+}
+.letter11 {
+  animation-delay: calc(3.5s / 24 * (24 - 11) * -1);
+}
+.letter12 {
+  animation-delay: calc(3.5s / 24 * (24 - 12) * -1);
+}
+.letter13 {
+  animation-delay: calc(3.5s / 24 * (24 - 13) * -1);
+}
+.letter14 {
+  animation-delay: calc(3.5s / 24 * (24 - 14) * -1);
+}
+.letter15 {
+  animation-delay: calc(3.5s / 24 * (24 - 15) * -1);
+}
+.letter16 {
+  animation-delay: calc(3.5s / 24 * (24 - 16) * -1);
+}
+.letter17 {
+  animation-delay: calc(3.5s / 24 * (24 - 17) * -1);
+}
+.letter18 {
+  animation-delay: calc(3.5s / 24 * (24 - 18) * -1);
+}
+.letter19 {
+  animation-delay: calc(3.5s / 24 * (24 - 19) * -1);
+}
+.letter20 {
+  animation-delay: calc(3.5s / 24 * (24 - 20) * -1);
+}
+.letter21 {
+  animation-delay: calc(3.5s / 24 * (24 - 21) * -1);
+}
+.letter22 {
+  animation-delay: calc(3.5s / 24 * (24 - 22) * -1);
+}
+.letter23 {
+  animation-delay: calc(3.5s / 24 * (24 - 23) * -1);
+}
+.letter24 {
+  animation-delay: calc(3.5s / 24 * (24 - 24) * -1);
+}
+.letter25 {
+  animation-delay: calc(3.5s / 24 * (24 - 24) * -1);
+}
+.letter26 {
+  animation-delay: calc(3.5s / 24 * (24 - 24) * -1);
+}
+.letter27 {
+  animation-delay: calc(3.5s / 24 * (24 - 24) * -1);
+}
+
+/* From Uiverse.io by Yaya12085 */ 
+.plan {
+  border-radius: 16px;
+  box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
+  padding: 10px;
+  background-color: #fff;
+  color: #697e91;
+  max-width: 300px;
+}
+
+.plan strong {
+  font-weight: 600;
+  color: #425275;
+}
+
+.plan .inner {
+  align-items: center;
+  padding: 20px;
+  padding-top: 40px;
+  background-color: #ecf0ff;
+  border-radius: 12px;
+  position: relative;
+}
+
+.plan .pricing {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #bed6fb;
+  border-radius: 99em 0 0 99em;
+  display: flex;
+  align-items: center;
+  padding: 0.625em 0.75em;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #425475;
+}
+
+.plan .pricing small {
+  color: #707a91;
+  font-size: 0.75em;
+  margin-left: 0.25em;
+}
+
+.plan .title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #425675;
+}
+
+.plan .title + * {
+  margin-top: 0.75rem;
+}
+
+.plan .info + * {
+  margin-top: 1rem;
+}
+
+.plan .features {
+  display: flex;
+  flex-direction: column;
+}
+
+.plan .features li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.plan .features li + * {
+  margin-top: 0.75rem;
+}
+
+.plan .features .icon {
+  background-color: #1FCAC5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.plan .features .icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+.plan .features + * {
+  margin-top: 1.25rem;
+}
+
+.plan .action {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.plan .button {
+  background-color: #6558d3;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-align: center;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  padding: 0.625em 0.75em;
+  text-decoration: none;
+}
+
+.plan .button:hover, .plan .button:focus {
+  background-color: #4133B7;
+}
+
   </style>
   <style>
     /*!
@@ -9704,6 +10039,7 @@ default="small Arial,Geneva,sans-serif"/>
 
                       <!-- AWAL MENULIS -->
                       <center>
+                        
                         <h1 class="style62 xx-besar tebal putih teks-shadow"><br>
                           Selamat Datang di Pusat Rental Aceh Lintas<br>
                           <script language="JavaScript">
@@ -9728,9 +10064,34 @@ default="small Arial,Geneva,sans-serif"/>
 
                         </h1>
                       </center>
+                      <hr>
+                      <div class="wrapper2">
+                        <div class="wrapper">
+                          <span class="letter letter1">A</span>
+                          <span class="letter letter2">C</span>
+                          <span class="letter letter3">E</span>
+                          <span class="letter letter4">H</span>
+                          <span class="letter letter5"> </span>
+                          <span class="letter letter6">L</span>
+                          <span class="letter letter7">I</span>
+                          <span class="letter letter8">N</span>
+                          <span class="letter letter9">T</span>
+                          <span class="letter letter10">A</span>
+                          <span class="letter letter11">S</span>
+                          <span class="letter letter12"> </span>
+                          <span class="letter letter13">M</span>
+                          <span class="letter letter14">E</span>
+                          <span class="letter letter15">D</span>
+                          <span class="letter letter16">A</span>
+                          <span class="letter letter17">N</span>
+                          <span class="letter letter18"> </span>
+                          <span class="letter letter19"> </span>
+                          
+                        </div>
+                      </div>
                       <!-- AKHIR MENULIS -->
 
-                      <br>
+                      <hr>
                       <p class="sedang style47 teks-shadow wow animated fadeInUp">
                         Aceh Lintas melayani jasa rental jenis mobil Pickup L300,
                         Sumatera Utara. <span class="kuningmuda tebal">Layanan profesional</span> sehingga <span class="kuningmuda tebal">siap menemani perjalanan Anda ke manapun.</span>
@@ -9804,6 +10165,138 @@ default="small Arial,Geneva,sans-serif"/>
                     <h2 class="tebal">Layanan Sewa Pickup Aceh Lintas</h2>
                     <p class="txt-caption">Ini adalah daftar layanan yang dimiliki oleh Aceh Lintas,
                       Layanan ini bisa dipilih sesuai dengan kebutuhan Anda.</p>
+                      <div class="kol-3">       
+                        <div class="loader1">
+                          <div class="truckWrapper">
+                            <div class="truckBody">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 198 93"
+                                class="trucksvg"
+                              >
+                                <path
+                                  stroke-width="3"
+                                  stroke="#282828"
+                                  fill="#F83D3D"
+                                  d="M135 22.5H177.264C178.295 22.5 179.22 23.133 179.594 24.0939L192.33 56.8443C192.442 57.1332 192.5 57.4404 192.5 57.7504V89C192.5 90.3807 191.381 91.5 190 91.5H135C133.619 91.5 132.5 90.3807 132.5 89V25C132.5 23.6193 133.619 22.5 135 22.5Z"
+                                ></path>
+                                <path
+                                  stroke-width="3"
+                                  stroke="#282828"
+                                  fill="#7D7C7C"
+                                  d="M146 33.5H181.741C182.779 33.5 183.709 34.1415 184.078 35.112L190.538 52.112C191.16 53.748 189.951 55.5 188.201 55.5H146C144.619 55.5 143.5 54.3807 143.5 53V36C143.5 34.6193 144.619 33.5 146 33.5Z"
+                                ></path>
+                                <path
+                                  stroke-width="2"
+                                  stroke="#282828"
+                                  fill="#282828"
+                                  d="M150 65C150 65.39 149.763 65.8656 149.127 66.2893C148.499 66.7083 147.573 67 146.5 67C145.427 67 144.501 66.7083 143.873 66.2893C143.237 65.8656 143 65.39 143 65C143 64.61 143.237 64.1344 143.873 63.7107C144.501 63.2917 145.427 63 146.5 63C147.573 63 148.499 63.2917 149.127 63.7107C149.763 64.1344 150 64.61 150 65Z"
+                                ></path>
+                                <rect
+                                  stroke-width="2"
+                                  stroke="#282828"
+                                  fill="#FFFCAB"
+                                  rx="1"
+                                  height="7"
+                                  width="5"
+                                  y="63"
+                                  x="187"
+                                ></rect>
+                                <rect
+                                  stroke-width="2"
+                                  stroke="#282828"
+                                  fill="#282828"
+                                  rx="1"
+                                  height="11"
+                                  width="4"
+                                  y="81"
+                                  x="193"
+                                ></rect>
+                                <rect
+                                  stroke-width="3"
+                                  stroke="#282828"
+                                  fill="#DFDFDF"
+                                  rx="2.5"
+                                  height="90"
+                                  width="121"
+                                  y="1.5"
+                                  x="6.5"
+                                ></rect>
+                                <rect
+                                  stroke-width="2"
+                                  stroke="#282828"
+                                  fill="#DFDFDF"
+                                  rx="2"
+                                  height="4"
+                                  width="6"
+                                  y="84"
+                                  x="1"
+                                ></rect>
+                              </svg>
+                            </div>
+                            <div class="truckTires">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 30 30"
+                                class="tiresvg"
+                              >
+                                <circle
+                                  stroke-width="3"
+                                  stroke="#282828"
+                                  fill="#282828"
+                                  r="13.5"
+                                  cy="15"
+                                  cx="15"
+                                ></circle>
+                                <circle fill="#DFDFDF" r="7" cy="15" cx="15"></circle>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 30 30"
+                                class="tiresvg"
+                              >
+                                <circle
+                                  stroke-width="3"
+                                  stroke="#282828"
+                                  fill="#282828"
+                                  r="13.5"
+                                  cy="15"
+                                  cx="15"
+                                ></circle>
+                                <circle fill="#DFDFDF" r="7" cy="15" cx="15"></circle>
+                              </svg>
+                            </div>
+                            <div class="road"></div>
+                        
+                            <svg
+                              xml:space="preserve"
+                              viewBox="0 0 453.459 453.459"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              xmlns="http://www.w3.org/2000/svg"
+                              id="Capa_1"
+                              version="1.1"
+                              fill="#000000"
+                              class="lampPost"
+                            >
+                              <path
+                                d="M252.882,0c-37.781,0-68.686,29.953-70.245,67.358h-6.917v8.954c-26.109,2.163-45.463,10.011-45.463,19.366h9.993
+                        c-1.65,5.146-2.507,10.54-2.507,16.017c0,28.956,23.558,52.514,52.514,52.514c28.956,0,52.514-23.558,52.514-52.514
+                        c0-5.478-0.856-10.872-2.506-16.017h9.992c0-9.354-19.352-17.204-45.463-19.366v-8.954h-6.149C200.189,38.779,223.924,16,252.882,16
+                        c29.952,0,54.32,24.368,54.32,54.32c0,28.774-11.078,37.009-25.105,47.437c-17.444,12.968-37.216,27.667-37.216,78.884v113.914
+                        h-0.797c-5.068,0-9.174,4.108-9.174,9.177c0,2.844,1.293,5.383,3.321,7.066c-3.432,27.933-26.851,95.744-8.226,115.459v11.202h45.75
+                        v-11.202c18.625-19.715-4.794-87.527-8.227-115.459c2.029-1.683,3.322-4.223,3.322-7.066c0-5.068-4.107-9.177-9.176-9.177h-0.795
+                        V196.641c0-43.174,14.942-54.283,30.762-66.043c14.793-10.997,31.559-23.461,31.559-60.277C323.202,31.545,291.656,0,252.882,0z
+                        M232.77,111.694c0,23.442-19.071,42.514-42.514,42.514c-23.442,0-42.514-19.072-42.514-42.514c0-5.531,1.078-10.957,3.141-16.017
+                        h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
+                              ></path>
+                            </svg>
+                          </div>
+                        </div>
+                        </div>
+                        
                   </div>
 
                   <div class="konten tengah">
@@ -9911,9 +10404,36 @@ default="small Arial,Geneva,sans-serif"/>
                   <div class="konten headline">
                     <h2 class="tebal">Keunggulan Rental Mobil Aceh Lintas</h2>
                     <p class="txt-caption">Ada banyak keunggulan yang dimiliki oleh jasa rental mobil Aceh Lintas, tak heran ini menjadi alasan mereka mengunakan layanan kami </p><br>
-                  </div>
-                  <div class="konten">
+                 <hr>
+<div class="wrapper2">
+  <div class="wrapper">
+    <span class="letter letter1">A</span>
+    <span class="letter letter2">C</span>
+    <span class="letter letter3">E</span>
+    <span class="letter letter4">H</span>
+    <span class="letter letter5"> </span>
+    <span class="letter letter6">L</span>
+    <span class="letter letter7">I</span>
+    <span class="letter letter8">N</span>
+    <span class="letter letter9">T</span>
+    <span class="letter letter10">A</span>
+    <span class="letter letter11">S</span>
+    <span class="letter letter12"> </span>
+    <span class="letter letter13">M</span>
+    <span class="letter letter14">E</span>
+    <span class="letter letter15">D</span>
+    <span class="letter letter16">A</span>
+    <span class="letter letter17">N</span>
+    <span class="letter letter18"> </span>
+    <span class="letter letter19"> </span>
+    
+  </div>
+</div>
 
+                  </div>
+                  <div class="konten"><hr><br>
+
+                 
                     <div class="group">
                       <div class="kol-3">
                         <div class="ico-fitur merah">
@@ -9994,7 +10514,7 @@ default="small Arial,Geneva,sans-serif"/>
                 <div class="post-body-blockquote">
                   Jangan Ragu Hubungi Kami di WhatsApp Sekarang!.. Kami Sudah Terpercaya Sejak 5 Tahun di Jasa Sewa
                   Rental Mobil
-                  <center><a class="btn1 btn-hijau btn-kecil"
+                  <center><br><a class="btn1 btn-hijau btn-kecil"
                       href="https://api.whatsapp.com/send?phone=6287853239977&text=Assalamualaikum,rentalmobil "
                       target="_blank"><i aria-hidden="true" class="fa fa-whatsapp"></i>WhatsApp Sekarang</a></center>
                 </div>
@@ -10002,13 +10522,38 @@ default="small Arial,Geneva,sans-serif"/>
               <div class="clear"></div>
             </div>
             <div class="widget HTML" data-version="1" id="HTML9">
-              <div class="widget-content">
+              <div class="widget-content"><br>
                 <!-- AWAL GALERI 4 KOLOM -->
                 <div class="fitur oke">
                   <div class="headline">
                     <h2 class="tebal">Galeri Foto dan Dokumentasi Rental Sewa Aceh Lintas</h2>
+                    <hr>
+                    <div class="wrapper2">
+                      <div class="wrapper">
+                        <span class="letter letter1">A</span>
+                        <span class="letter letter2">C</span>
+                        <span class="letter letter3">E</span>
+                        <span class="letter letter4">H</span>
+                        <span class="letter letter5"> </span>
+                        <span class="letter letter6">L</span>
+                        <span class="letter letter7">I</span>
+                        <span class="letter letter8">N</span>
+                        <span class="letter letter9">T</span>
+                        <span class="letter letter10">A</span>
+                        <span class="letter letter11">S</span>
+                        <span class="letter letter12"> </span>
+                        <span class="letter letter13">M</span>
+                        <span class="letter letter14">E</span>
+                        <span class="letter letter15">D</span>
+                        <span class="letter letter16">A</span>
+                        <span class="letter letter17">N</span>
+                        <span class="letter letter18"> </span>
+                        <span class="letter letter19"> </span>
+                        
+                      </div>
+                    </div>
                   </div>
-                  <div class="konten tengah">
+                  <div class="konten tengah"><hr>
 
                     <div class="kol-4">
                       <div class="box">
@@ -10118,6 +10663,15 @@ default="small Arial,Geneva,sans-serif"/>
                       </div>
                     </div>
 
+                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@aceh2303" data-unique-id="aceh2303" data-embed-type="creator" style="max-width: 780px; min-width: 298px;"> 
+                      <section> 
+                          <a target="_blank" href="https://www.tiktok.com/@aceh2303?refer=creator_embed">@aceh2303</a> 
+                      </section> 
+                  </blockquote> 
+                  <script async src="https://www.tiktok.com/embed.js"></script>
+                    
+                 
+                  <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@aceh2303/video/7112759012835314970" data-video-id="7112759012835314970" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@aceh2303" href="https://www.tiktok.com/@aceh2303?refer=embed">@aceh2303</a> black siap untuk cari cuan kembali 😂@simplejunior_pandasantuy @kadal_lasak_sumatra04 @dedekcayla3 @rea_bangun_kkb @kibeeh29 <a target="_blank" title="♬ Dj Pok Amai Amai Belalang Kupu Kupu - Nata HG" href="https://www.tiktok.com/music/Dj-Pok-Amai-Amai-Belalang-Kupu-Kupu-7075966786511833089?refer=embed">♬ Dj Pok Amai Amai Belalang Kupu Kupu - Nata HG</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
 
 
                   </div>
@@ -10242,6 +10796,31 @@ default="small Arial,Geneva,sans-serif"/>
                 <div class="fitur oke">
 
                   <div class="konten headline">
+                    <hr>
+                    <div class="wrapper2">
+                      <div class="wrapper">
+                        <span class="letter letter1">A</span>
+                        <span class="letter letter2">C</span>
+                        <span class="letter letter3">E</span>
+                        <span class="letter letter4">H</span>
+                        <span class="letter letter5"> </span>
+                        <span class="letter letter6">L</span>
+                        <span class="letter letter7">I</span>
+                        <span class="letter letter8">N</span>
+                        <span class="letter letter9">T</span>
+                        <span class="letter letter10">A</span>
+                        <span class="letter letter11">S</span>
+                        <span class="letter letter12"> </span>
+                        <span class="letter letter13">M</span>
+                        <span class="letter letter14">E</span>
+                        <span class="letter letter15">D</span>
+                        <span class="letter letter16">A</span>
+                        <span class="letter letter17">N</span>
+                        <span class="letter letter18"> </span>
+                        <span class="letter letter19"> </span>
+                        
+                      </div>
+                    </div><hr>
                     <h2 class="tebal">Jangan Ragu, Hubungi Kami Sekarang juga! Anda Mungkin Bisa Dapatkan Paket Promo Jika Anda Pesan Hari
                       ini</h2>
                     <p>Hubungi Aceh Lintas dengan langsung tekan salah satu tombol chat di bawah ini</p>
@@ -10256,7 +10835,6 @@ default="small Arial,Geneva,sans-serif"/>
                     <!-- kirim SMS -->
                     <a class="btn1 btn-orange" href="sms:087853239977" target="_blank"><i aria-hidden="true"
                         class="fa fa fa-comments"></i> SMS</a>
-
                   </div>
 
                 </div>
@@ -10286,7 +10864,7 @@ default="small Arial,Geneva,sans-serif"/>
                       </div>
                       <div class="teks-fitur">
                         <p class="tebal">Berapa Nomer Marketing, Cs atau call center Aceh Lintas?</p>
-                        <div class="kecil">Untuk pemesanan sewa dan rental mobil di Berau bisa menghubungi nomor ini,
+                        <div class="kecil">Untuk pemesanan sewa dan rental mobil di Medan bisa menghubungi nomor ini,
                           087853239977 (Ridho).</div><br>
                       </div>
 
@@ -10457,7 +11035,17 @@ default="small Arial,Geneva,sans-serif"/>
                               Tertarik menggunakan layanan jasa sewa rental mobil kami bisa menghubungi kami disini:
                               Aceh Lintas
                               088753239977
-                              Jl. Kemiri No 5-7 Sukodono, tanjung gusta, Medan Helvetia </blockquote>
+                              Jl. Kemiri No 5-7 Sukodono, tanjung gusta, Medan Helvetia <br><div class="konten tengah">
+                                <!-- chat whatsapp -->
+                                <a class="btn1 btn-hijau"
+                                  href="https://api.whatsapp.com/send?phone=6287853239977&text=Halo Pak, Kami Ingin Sewa Mobil..."
+                                  target="_blank"><i aria-hidden="true" class="fa fa-whatsapp"></i> WhatsApp</a>
+            
+                                <!-- kirim SMS -->
+                                <a class="btn1 btn-orange" href="sms:087853239977" target="_blank"><i aria-hidden="true"
+                                    class="fa fa fa-comments"></i> SMS</a>
+                              </div> </blockquote>
+                              
                             <div class="oke ">
                               <div class="sharepost">
                                 <ul>
@@ -10568,6 +11156,9 @@ default="small Arial,Geneva,sans-serif"/>
     <div class="bawah section" id="footer">
       <div class="widget HTML" data-version="1" id="HTML15">
         <div class="widget-content">
+
+         
+
           <!-- AWAL ALAMAT -->
           <div class="fitur oke" id="kontak">
 
@@ -10608,6 +11199,70 @@ default="small Arial,Geneva,sans-serif"/>
             </div>
           </div>
           <!-- AKHIR ALAMAT-->
+          <div class="fitur oke" id="jasa">
+
+            <div class="konten headline">
+              <h2 class="tebal ">Jasa Pembuatan Website</h2>
+            </div>
+            <div class="konten tengah">
+             
+<div class="plan tengah">
+  <div class="inner">
+      <span class="pricing">
+          <span>
+              Harga<small>Sesuai kebutuhan</small>
+          </span>
+      </span><br>
+      <p class="title">Jasa Pembuatan Website</p>
+      <p class="info">Kami menyediakan layanan pembuatan website yang modern, responsif, dan sesuai dengan kebutuhan bisnis Anda.</p>
+      <ul class="features">
+          <li>
+              <span class="icon">
+                  <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                  </svg>
+              </span>
+              <span><strong>Desain Custom & Eksklusif</strong> sesuai kebutuhan</span>
+          </li>
+          <li>
+              <span class="icon">
+                  <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                  </svg>
+              </span>
+              <span><strong>SEO & Kecepatan Optimal</strong> agar website mudah di akses</span>
+          </li>
+          <li>
+              <span class="icon">
+                  <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                  </svg>
+              </span>
+              <span><strong>Mobile-Friendly</strong> & kompatibel di semua perangkat</span>
+          </li>
+          <li>
+              <span class="icon">
+                  <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                  </svg>
+              </span>
+              <span><strong>Dukungan & Maintenance</strong> setelah peluncuran</span>
+          </li>
+      </ul>
+      <div class="action">
+          <a class="button" href="https://linktr.ee/RaihanDikrey/">
+              Pesan Sekarang
+          </a>
+      </div>
+  </div>
+</div>
+
+            </div>
+            <br>
         </div>
         <div class="clear"></div>
       </div>
